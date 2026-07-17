@@ -1,0 +1,12 @@
+{"question": "What does Article 21 guarantee?", "expected_articles": ["21"], "answer_contains": ["life", "personal liberty"]}
+{"question": "Is untouchability legal in India?", "expected_articles": ["17"], "answer_contains": ["abolished"]}
+{"question": "How is the President of India elected?", "expected_articles": ["54", "55"], "answer_contains": ["electoral college"]}
+{"question": "What is the procedure for amending the Constitution?", "expected_articles": ["368"], "answer_contains": ["two-thirds"]}
+{"question": "Which rights fall under freedom of speech?", "expected_articles": ["19"], "answer_contains": ["speech", "expression"]}
+{"question": "How many members can the Rajya Sabha have?", "expected_articles": ["80"], "answer_contains": ["Council of States"]}
+{"question": "What is equality before the law?", "expected_articles": ["14"], "answer_contains": ["equal protection"]}
+{"question": "Does the Constitution guarantee free education for children?", "expected_articles": ["21A"], "answer_contains": ["education"]}
+{"question": "What remedies exist to enforce fundamental rights?", "expected_articles": ["32"], "answer_contains": ["Supreme Court", "writs"]}
+{"question": "Can the State discriminate on grounds of religion or caste?", "expected_articles": ["15"], "answer_contains": ["discriminate"]}
+{"question": "What is the role of the Council of Ministers?", "expected_articles": ["74"], "answer_contains": ["Prime Minister", "advise"]}
+{"question": "What does the Constitution say about a uniform civil code?", "expected_articles": ["44"], "answer_contains": ["uniform civil code"]}
