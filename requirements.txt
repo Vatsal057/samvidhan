@@ -1,0 +1,6 @@
+# Runtime dependencies. Pinned to compatible minimums; tested on Python 3.11.
+sentence-transformers>=2.7.0
+chromadb>=0.5.0
+huggingface-hub>=0.24.0
+pypdf>=4.2.0
+streamlit>=1.36.0

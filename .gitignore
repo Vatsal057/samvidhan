@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environment / secrets
+.env
+
+# Vector store (rebuild with `make ingest`)
+chroma_db/
+
+# Source PDF (downloaded, not committed)
+*.pdf
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
