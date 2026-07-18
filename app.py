@@ -34,8 +34,9 @@ st.markdown(
 html, body, [class*="css"] { font-family:'Inter',sans-serif; background:#faf9f7; color:#1c1917; }
 .title { font-family:'EB Garamond',serif; font-size:2.6rem; font-weight:600; line-height:1.1; }
 .subtitle { color:#78716c; font-size:.9rem; margin-top:2px; margin-bottom:1rem; }
-.answer-box { background:#fff; color:#1c1917; border:1px solid #e7e5e4; border-left:4px solid #1c4ed8;
-  border-radius:6px; padding:1.2rem 1.4rem; font-size:.95rem; line-height:1.7; white-space:pre-wrap; }
+.answer-box { background:#fff; color:#1c1917; border:1px solid #e7e5e4;
+  border-left:4px solid #1c4ed8; border-radius:6px; padding:1.2rem 1.4rem;
+  font-size:.95rem; line-height:1.7; white-space:pre-wrap; }
 .source-card, .source-card div { color:#1c1917; }
 .answer-box.retrieval-only { border-left-color:#d97706; }
 .source-card { background:#f5f5f4; border:1px solid #e7e5e4; border-radius:6px;
