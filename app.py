@@ -64,7 +64,14 @@ hr { border-color:#e7e5e4; }
 def boot():
     try:
         retrieve.get_embedder()
-        retrieve.get_collection()
+        try:
+            retrieve.get_collection()
+        except Exception:  # noqa: BLE001 - first boot: build the index from the sample
+            from samvidhan.ingest import ingest
+
+            ingest(text="data/sample")
+            retrieve._collection = None  # force a fresh handle after ingest
+            retrieve.get_collection()
         return True
     except Exception as e:  # noqa: BLE001
         return str(e)
