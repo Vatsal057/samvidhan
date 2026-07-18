@@ -6,7 +6,7 @@
 
 Ask a question in plain English → get a grounded answer that cites the exact articles it came from.
 
-[![CI](https://github.com/your-username/samvidhan/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/samvidhan/actions/workflows/ci.yml)
+[![CI](https://github.com/vatsal057/samvidhan/actions/workflows/ci.yml/badge.svg)](https://github.com/vatsal057/samvidhan/actions/workflows/ci.yml)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/badge/lint-ruff-purple.svg)](https://github.com/astral-sh/ruff)
@@ -92,7 +92,7 @@ hundred readable lines that are easy to test and debug.
 ## Quick start
 
 ```bash
-git clone https://github.com/your-username/samvidhan.git
+git clone https://github.com/vatsal057/samvidhan.git
 cd samvidhan
 
 python -m venv .venv && source .venv/bin/activate
