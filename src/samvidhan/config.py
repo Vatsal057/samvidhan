@@ -40,7 +40,7 @@ class Settings:
         default_factory=lambda: os.getenv("RERANK_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
     )
     gen_model: str = field(
-        default_factory=lambda: os.getenv("GEN_MODEL", "mistralai/Mistral-7B-Instruct-v0.3")
+        default_factory=lambda: os.getenv("GEN_MODEL", "Qwen/Qwen2.5-7B-Instruct")
     )
 
     # Retrieval

@@ -54,12 +54,12 @@ in [FAILURES.md](FAILURES.md), and the fixes it recommended are now shipped feat
 
 ## Screenshots
 
-![Samvidhan answering a question with cited sources](docs/screenshot-retrieval.png)
+![Samvidhan generating a grounded, cited answer](docs/screenshot-answer.png)
 
-Every answer is accompanied by the exact articles it was built from — here in
-retrieval-only mode (no token), where the app still surfaces Article 21 and its
-neighbours with page numbers and similarity scores. Add an `HF_TOKEN` and the answer
-box fills with a grounded, generated summary of those same sources.
+A grounded answer with `HF_TOKEN` set: the model answers **only** from the retrieved
+articles and cites them, with the exact sources (article number, page, similarity)
+shown alongside. Without a token the app degrades to retrieval-only and still surfaces
+the matching articles — see [`docs/screenshot-retrieval.png`](docs/screenshot-retrieval.png).
 
 ---
 
@@ -80,7 +80,7 @@ box fills with a grounded, generated summary of those same sources.
                                    ▼
                     ┌─────────────────────────────┐
                     │  Strict grounded prompt      │
-                    │  → Mistral-7B (HF Inference) │──► cited answer
+                    │  → Qwen2.5-7B (HF Inference) │──► cited answer
                     └─────────────────────────────┘
 ```
 
@@ -186,7 +186,7 @@ samvidhan/
 | Embeddings | `all-MiniLM-L6-v2` (local) | Fast, free, no API needed for retrieval |
 | Vector store | ChromaDB (persistent) | Simple, local, cosine ANN built in |
 | Re-ranker | `ms-marco-MiniLM-L-6-v2` cross-encoder | Precision boost, optional |
-| Generation | Mistral-7B-Instruct via HF Inference API | Strong open model, no self-hosting |
+| Generation | Qwen2.5-7B-Instruct via HF Inference API | Strong open model, no self-hosting |
 | PDF parsing | pypdf | Lightweight, pure-Python |
 | UI | Streamlit | Minimal code, deployable to HF Spaces |
 | Quality | pytest · ruff · GitHub Actions | Tested, linted, CI-verified |
